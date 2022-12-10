@@ -1,0 +1,123 @@
+const restartBtn = document.getElementById('restart')
+const prevBtn = document.getElementById('prev')
+const nextBtn = document.getElementById('next')
+const doneBtn = document.getElementById('done')
+//const trueBtn = document.getElementById('true')
+//const falseBtn = document.getElementById('false')
+const questionText = document.getElementById('question-text')
+
+let currentQuestion = 0
+
+let questions = [
+    {
+        question: 'Who provides insurance to banks up to at least $250,000 per depositor?'
+    },
+    {
+        question: 'Name one deposit product available at financial institutions?'
+    },
+    {
+        question: 'Name one credit product available at financial institutions?'
+    },
+    {
+        question: 'True or False: <br> Everyone is approved for an account?'
+    },
+    {
+        question: 'What does ATM stand for?'
+    },
+    {
+        question: 'What are the benefits of having a checking account?'
+    },
+    {
+        question: 'What is an example of a person to person payment?'
+    },
+    {
+        question: 'Give an example of how to apply for an account?'
+    },
+    {
+        question: 'Provide me an example of how a savings account is utilized?'
+    },
+    {
+        question: 'Banking history includes information such as...'
+    },
+    {
+        question: 'What is an advantage of Online Banking?'
+    },
+    {
+        question: 'How many components make up a check?'
+    },
+    {
+        question: 'Provide me 3 of the 12 components of a check?'
+    },
+    {
+        question: 'Fill in the blank:  <br> Online banking provides you _____ access to your account?'
+    },
+    {
+        question: 'What are TWO programs that cover ATM and Debit Card Transactions?'
+    },
+    {
+        question: 'Fill in the blank:  <br> Many employers offer ______ for payroll pay checks?'
+    },
+    {
+        question: 'Fill in the blank: <br>  ______ offers you the ability to schedule and send payments through your financial institution.'
+    },
+    {
+        question: 'What is one way to pay your bills?'
+    },
+    {
+        question: 'Fill in the blank: <br> Debit cards look like credit cards because they have a card network logo on them, but they are _____ credit cards.'
+    },
+    {
+        question: 'Enrique has $100 in his account, he spends $50 at HEB, $15 at Chick-Fil-A, $30 at Starbucks, and his phone bill is $35. What is his available balance and will he be charged an overdraft fee?'
+    }
+    
+]
+
+function beginQuiz() {
+    currentQuestion = 0;
+    questionText.innerHTML = questions[currentQuestion].question;
+    prevBtn.classList.add('hide')
+}
+
+function restart() {
+    currentQuestion = 0;
+    prevBtn.classList.remove('hide')
+    nextBtn.classList.remove('hide')
+    doneBtn.classList.remove('hide')
+
+    beginQuiz()
+}
+
+function next() {
+    currentQuestion++;
+    if (currentQuestion >= 2){
+        prevBtn.classList.remove('hide')
+    }
+    questionText.innerHTML = questions[currentQuestion].question;
+
+    prevBtn.classList.remove('hide')
+}
+
+function prev() {
+    currentQuestion--;
+    if (currentQuestion <= 0){
+        nextBtn.classList.remove('hide')
+    }
+    questionText.innerHTML = questions[currentQuestion].question;
+
+    nextBtn.classList.remove('hide')
+}
+
+function done() {
+    prevBtn.classList.add('hide')
+    nextBtn.classList.add('hide')
+    doneBtn.classList.add('hide')
+
+    questionText.innerHTML = "Congratulations on completing Amegy Banks Financial Literacy Course!"
+}
+
+
+
+restartBtn.addEventListener('click', restart)
+prevBtn.addEventListener('click',prev)
+nextBtn.addEventListener('click',next)
+doneBtn.addEventListener('click',done)

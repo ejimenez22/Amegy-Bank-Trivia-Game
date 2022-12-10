@@ -27,6 +27,9 @@ body{
     border-radius: 8px;
     text-align: center;
 }
+.question{
+    font-size: 100px;
+}
 
 .content{
     display: flex;
