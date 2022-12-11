@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url('/images/amegy.jpg');
+    background-image: url('../images/amegy.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body{
 .container{
     width: 80vw;
     max-width: 80%;
-    background-image: url('/images/template.jpg');
+    background-image: url('../images/template.jpg');
     height: 70vh;
     box-shadow: 0 0 5px 4px;
     display: flex;
