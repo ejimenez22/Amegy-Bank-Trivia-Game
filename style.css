@@ -5,8 +5,11 @@
 }
 
 body{
-    background: linear-gradient(to right, #0000ff, #0096ff);
+    background-image: url('/images/amegy.jpg');
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -17,7 +20,7 @@ body{
 .container{
     width: 80vw;
     max-width: 80%;
-    background-color: #f6490f;
+    background-image: url('/images/template.jpg');
     height: 70vh;
     box-shadow: 0 0 5px 4px;
     display: flex;
@@ -26,9 +29,10 @@ body{
     align-items: center;
     border-radius: 8px;
     text-align: center;
+    opacity: 95%;
 }
 .question{
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .content{
