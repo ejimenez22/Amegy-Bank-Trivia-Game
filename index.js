@@ -10,7 +10,7 @@ let currentQuestion = 0
 
 let questions = [
     {
-        question: 'Who provides insurance to banks up to at least $250,000 per depositor?'
+        question: 'FDIC covers up to how much per depositor?'
     },
     {
         question: 'Name one deposit product available at financial institutions?'
@@ -19,28 +19,28 @@ let questions = [
         question: 'Name one credit product available at financial institutions?'
     },
     {
-        question: 'True or False: <br> Everyone is approved for an account?'
+        question: 'True or False: <br> Everyone is not approved for an account.'
     },
     {
         question: 'What does ATM stand for?'
     },
     {
-        question: 'What are the benefits of having a checking account?'
+        question: 'What are the benefits of having a savings account?'
     },
     {
-        question: 'What is an example of a person to person payment?'
+        question: 'What is Cash App an example of?'
     },
     {
         question: 'Give an example of how to apply for an account?'
     },
     {
-        question: 'Provide me an example of how a savings account is utilized?'
+        question: 'Provide me an example of how a checking account is utilized?'
     },
     {
         question: 'Banking history includes information such as...'
     },
     {
-        question: 'What is an advantage of Online Banking?'
+        question: '24/7 access to your account, person to person transfers, and bill pay are advantages of ______?'
     },
     {
         question: 'How many components make up a check?'
@@ -64,10 +64,10 @@ let questions = [
         question: 'What is one way to pay your bills?'
     },
     {
-        question: 'Fill in the blank: <br> Debit cards look like credit cards because they have a card network logo on them, but they are _____ credit cards.'
+        question: 'Fill in the blank: <br> ____ cards look like _____ cards because they have a card network logo on them, but they are not the same.'
     },
     {
-        question: 'Enrique has $100 in his account, he spends $50 at HEB, $15 at Chick-Fil-A, $30 at Starbucks, and his phone bill is $35. What is his available balance and will he be charged an overdraft fee?'
+        question: 'Rudy has chosen to opt in. He has $100 in his account, he spends $50 at HEB, $15 at Chick-Fil-A, $30 at Starbucks, and his phone bill is $35. What is his available balance and will he be charged an overdraft fee?'
     }
     
 ]
